@@ -1,4 +1,3 @@
-#!/bin/bash
 # Customize Bash prompt
 export PS1="[\u@\h \w]\$ "
 
