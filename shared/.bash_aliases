@@ -1,5 +1,5 @@
 # General system commands
-alias lsm='ls -la | more'
+alias lsm='ls -lA | more'
 alias ..='cd ..'
 alias h='history'
 

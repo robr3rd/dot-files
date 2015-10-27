@@ -1,3 +1,4 @@
-alias l='ls -ALh' # Same as `cls` but not a vertical list
-alias cls='ls -lALh' # "Colored `ls`"
-alias clsm='ls -lALh| more' # "Colored `ls` with `more`"
+alias l='ls -Ah' # Same as `cls` but not a vertical list
+alias lsl='ls -l'
+alias cls='ls -lAh' # "Colored `ls`"
+alias clsm='ls -lAh| more' # "Colored `ls` with `more`"
