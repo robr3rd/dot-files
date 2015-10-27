@@ -10,3 +10,8 @@ fi
 if [ -f ~/.bash_aliases ]; then
 	source ~/.bash_aliases
 fi
+
+# Add autocomplete to bash aliases
+if [ -f ~/.completion-wrapper.sh ]; then
+	source ~/.completion-wrapper.sh
+fi
