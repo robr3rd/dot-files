@@ -12,9 +12,9 @@ alias gs='git status'
 alias gb='git branch'
 alias gbd='git branch -D' # [branch]
 
-alias gc='git checkout'
-alias gcb='git checkout -b' # [new_branch_name]
-alias gcm='git checkout master'
+alias gco='git checkout'
+alias gcob='git checkout -b' # [new_branch_name]
+alias gcom='git checkout master'
 alias gundo='git checkout --' # [filepath] - "Undo" changes in working branch
 
 alias gm='git merge'
@@ -44,9 +44,9 @@ alias gd='git diff --name-status'
 alias gdm='gd master'
 
 alias ga='git add . -A'
-alias gcm='git commit -am' # "[commit message]"
-alias gcma='git commit --amend -m' # "[commit message]"
-alias gcmap='git commit --amend --no-edit' # Preserve commit message
+alias gc='git commit -am' # "[commit message]"
+alias gca='git commit --amend -m' # "[commit message]"
+alias gcap='git commit --amend --no-edit' # Preserve commit message
 
 alias grs='git reset' # [filepath / SHA /branch]
 alias grsh='git reset --hard' # [filepath / SHA / branch]

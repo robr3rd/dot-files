@@ -36,8 +36,10 @@ make-completion-wrapper _git _git_checkout_mine git checkout
 make-completion-wrapper _git _git_branch_mine git branch
 make-completion-wrapper _git _git_rebase_mine git rebase
 make-completion-wrapper _git _git_revert_mine git revert
+make-completion-wrapper _git _git_commit_mine git commit
 make-completion-wrapper _git _git_stash_mine git stash
 make-completion-wrapper _git _git_reset_mine git reset
+make-completion-wrapper _git _git_fetch_mine git fetch
 make-completion-wrapper _git _git_merge_mine git merge
 make-completion-wrapper _git _git_diff_mine git diff
 make-completion-wrapper _git _git_pull_mine git pull
@@ -46,25 +48,26 @@ make-completion-wrapper _git _git_add_mine git add
 make-completion-wrapper _git _git_log_mine git log
 
 # we tell bash to actually use _git_checkout_mine to complete "gco"
+complete -o bashdefault -o default -o nospace -F _git_checkout_mine gco
+complete -o bashdefault -o default -o nospace -F _git_checkout_mine gundo
 complete -o bashdefault -o default -o nospace -F _git_branch_mine gb
 complete -o bashdefault -o default -o nospace -F _git_branch_mine gbd
-complete -o bashdefault -o default -o nospace -F _git_checkout_mine gc
-complete -o bashdefault -o default -o nospace -F _git_merge_mine gm
 complete -o bashdefault -o default -o nospace -F _git_rebase_mine gr
+complete -o bashdefault -o default -o nospace -F _git_commit_mine gc
+complete -o bashdefault -o default -o nospace -F _git_commit_mine gca
+complete -o bashdefault -o default -o nospace -F _git_commit_mine gcap
+complete -o bashdefault -o default -o nospace -F _git_stash_mine gsl
+complete -o bashdefault -o default -o nospace -F _git_stash_mine gsp
+complete -o bashdefault -o default -o nospace -F _git_stash_mine gsc
+complete -o bashdefault -o default -o nospace -F _git_reset_mine grs
+complete -o bashdefault -o default -o nospace -F _git_reset_mine grshard
+complete -o bashdefault -o default -o nospace -F _git_fetch_mine gfa
+complete -o bashdefault -o default -o nospace -F _git_merge_mine gm
+complete -o bashdefault -o default -o nospace -F _git_diff_mine gd
+complete -o bashdefault -o default -o nospace -F _git_diff_mine gdns
 complete -o bashdefault -o default -o nospace -F _git_pull_mine gpl
 complete -o bashdefault -o default -o nospace -F _git_pull_mine gplr
 complete -o bashdefault -o default -o nospace -F _git_push_mine gps
 complete -o bashdefault -o default -o nospace -F _git_push_mine gpsf
-complete -o bashdefault -o default -o nospace -F _git_stash_mine gsl
-complete -o bashdefault -o default -o nospace -F _git_stash_mine gsp
-complete -o bashdefault -o default -o nospace -F _git_stash_mine gsc
-complete -o bashdefault -o default -o nospace -F _git_log_mine gl
-complete -o bashdefault -o default -o nospace -F _git_diff_mine gd
-complete -o bashdefault -o default -o nospace -F _git_diff_mine gdns
 complete -o bashdefault -o default -o nospace -F _git_add_mine ga
-complete -o bashdefault -o default -o nospace -F _git_fetch_mine gfa
-complete -o bashdefault -o default -o nospace -F _git_amend_mine gamne
-complete -o bashdefault -o default -o nospace -F _git_reset_mine grs
-complete -o bashdefault -o default -o nospace -F _git_reset_mine grshard
-complete -o bashdefault -o default -o nospace -F _git_commit_mine gundo
-complete -o bashdefault -o default -o nospace -F _git_commit_mine gam
+complete -o bashdefault -o default -o nospace -F _git_log_mine gl
