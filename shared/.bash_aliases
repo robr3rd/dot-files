@@ -3,6 +3,7 @@ alias lsm='ls -lA | more'
 alias ..='cd ..'
 alias h='history'
 alias dif='diff -u' # [original_file] [new_file] - Modern, unified output format
+alias grepf='grep -l' # [remaining `grep` command] - No content, only filepath
 
 # Git commands
 alias pwb='git symbolic-ref --short -q HEAD' # pwb = "print working branch"
