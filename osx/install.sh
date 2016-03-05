@@ -5,13 +5,13 @@ SCRIPTPATH=$( cd "$(dirname "$0")" ; cd .. ; pwd -P )
 
 
 # Move if exists, otherwise just silently fail
-mv $HOME/.bashrc{,-$(date +%F-%T).bak} 2>/dev/null
-mv $HOME/.bash_profile{,-$(date +%F-%T).bak} 2>/dev/null
-mv $HOME/.bash_aliases{,-$(date +%F-%T).bak} 2>/dev/null
-mv $HOME/.git-completion.bash{,-$(date +%F-%T).bak} 2>/dev/null
-mv $HOME/.completion-wrapper.sh{,-$(date +%F-%T).bak} 2>/dev/null
+mv $HOME/.bashrc{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
+mv $HOME/.bash_profile{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
+mv $HOME/.bash_aliases{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
+mv $HOME/.git-completion.bash{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
+mv $HOME/.completion-wrapper.sh{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
 
-mv $HOME/.tmux.conf{,-$(date +%F-%T).bak} 2>/dev/null
+mv $HOME/.tmux.conf{,-$(date +%F-%T).robr3rd-dotfiles.bak} 2>/dev/null
 
 
 # Commence installation!
