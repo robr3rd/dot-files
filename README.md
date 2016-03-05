@@ -1,5 +1,7 @@
 # dot-files
-Helpful shell login dot-files, such as `.bash_profile` and `.bashrc`
+Helpful shell login dot-files, such as `.bash_profile` and `.bashrc`.
+
+To install, run the `install.sh` script inside of the folder that represents your Operating System.
 
 # Features
 ## Git autocompletion
@@ -11,7 +13,7 @@ Except Windows. Because honestly, who uses the Windows command line?
 Support for:
 
 - Linux (obvious and easy)
-- OS X (accounts for some of the BSD-isms of OS X's default binaries and works with `Terminal.app`'s weird login shell policy)
+- OS X (accounts for some of the BSD-isms of OS X's non-GNU default binaries and works with `Terminal.app`'s weird login shell policy)
 
 
 # Roadmap
