@@ -1,7 +1,7 @@
 #!/bin/bash
 # Symlink the files to the appropriate locations in the home directory (backup existing files, if applicable)
 
-SCRIPTPATH=$( cd "$(dirname "$0")" ; pwd -P )
+SCRIPTPATH=$( cd "$(dirname "$0")" ; cd .. ; pwd -P )
 
 
 # Move if exists, otherwise just silently fail
@@ -14,10 +14,10 @@ mv $HOME/.tmux.conf{,-$(date +%F-%T).bak} 2>/dev/null
 
 
 # Commence installation!
-cp {$SCRIPTPATH/..shared/,$HOME/}.bashrc
-cp {$SCRIPTPATH/../shared/,$HOME/}.git-completion.bash
-cp {$SCRIPTPATH/../shared/,$HOME/}.completion-wrapper.sh
+cp {$SCRIPTPATH/shared/,$HOME/}.bashrc
+cp {$SCRIPTPATH/shared/,$HOME/}.git-completion.bash
+cp {$SCRIPTPATH/shared/,$HOME/}.completion-wrapper.sh
 # Concatenate for platform-specific differences
-cat {$SCRIPTPATH/../shared/,$SCRIPTPATH/}.bash_aliases > $HOME/.bash_aliases
+cat $SCRIPTPATH/{shared/,linux/}.bash_aliases > $HOME/.bash_aliases
 
-cp {$SCRIPTPATH/../shared/,$HOME/}.tmux.conf
+cp {$SCRIPTPATH/shared/,$HOME/}.tmux.conf
