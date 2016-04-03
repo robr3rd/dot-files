@@ -2,6 +2,7 @@
 alias vgu='vagrant up'
 alias vgd='vagrant destroy'
 alias vgr='vagrant reload'
+alias vgrp='vagrant reload --provision'
 alias vgh='vagrant halt'
 alias vgs='vagrant ssh'
 alias vgst='vagrant status'
